@@ -1,0 +1,12 @@
+{
+  "name": "hash-util-8f28e3",
+  "version": "1.0.0",
+  "description": "A hash-util utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["hash-util", "utility"],
+  "license": "MIT"
+}

